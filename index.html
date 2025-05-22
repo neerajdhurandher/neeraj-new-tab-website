@@ -11,29 +11,22 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <a href="/">
+            <a href="/home" onclick="navigateTo('/home'); return false;">
                 <img src="neeraj-logo.png" alt="Logo">
             </a>
         </div>
         <div class="nav-links">
-            <a href="/">About</a>
+            <a href="/">Author</a>
             <a href="/privacy-policy" onclick="navigateTo('/privacy-policy'); return false;">Privacy Policy</a>
             <a href="https://forms.gle/6X8YtLKpUKtKihkt6" target="_blank">Feedback</a>
         </div>
     </div>
 
-    <div id="privacy-policy" class="page">
+    <!-- add div to hold the main content which loads home.html page -->
+    <div id="content-div" class="page">
         <div id="content"></div>
-        <script>
-            window.onload = function () {
-                fetch('privacy-policy.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('content').innerHTML = data;
-                    });
-            }
-        </script>
     </div>
+        
 
     <div class="footer">
         <h2>Made with &#9829; </h2>
