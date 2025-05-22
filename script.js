@@ -1,7 +1,7 @@
 //  on load of the page, load the default content
 window.onload = function () {
     // Redirect to /home if on the root path
-    if (window.location.pathname === '/neeraj-new-tab-website' || window.location.pathname === '/index.html') {
+    if (window.location.pathname === '/neeraj-new-tab-website/' || window.location.pathname === '/index.html') {
         navigateTo('/home');
     }
 }
